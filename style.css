@@ -1,0 +1,319 @@
+body {
+  overflow-x: hidden;
+  color: #505962;
+}
+
+.offset {
+	padding: 50px 0px;
+}
+
+@media (min-width: 768px) { 
+	.offset {
+		padding: 80px 0px;
+	}
+ }
+
+/* Navigation */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 768px) { 
+	.navbar {
+		background: transparent
+	}
+ }
+
+.nav-item .nav-link {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color:#ffffff;
+	padding-top: 0.8rem;
+	transition: color 0.4s ease;
+	padding-right: 2.1875rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #50C3AF;
+}
+
+#navbar, #logo {
+	transition: 0.6s;
+}
+
+/* Hero Section  */
+.home-inner {
+	background-image: url(./img/hero.jpg);
+	box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.caption h1 {
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+	text-shadow: 0.1rem 0.1rem 0.8rem black;
+	padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) { 
+	.caption h1 {
+		font-size: 3.8rem;
+	}
+ }
+
+@media (min-width: 576px) {
+	.subtitle:before {
+		content: url(./img/line.svg);
+		top: -4px;
+		margin-right: 20px;
+		vertical-align: super;
+	}
+}
+
+.subtitle {
+	font-size: 0.9375rem;
+	text-shadow: 0.1rem 0.1rem 0.8rem black;
+	padding-bottom: 1.6rem;
+}
+
+@media (min-width: 576px) {
+	.subtitle:after {
+		content: url(./img/line.svg);
+		margin-left: 20px;
+		vertical-align: super;
+	}
+}
+
+.btn {
+	background-color: #50C3AF;
+	border-radius: 40px ;
+	border: none;
+	transition: all 0.1s ease-in-out;
+	color: white;
+}
+
+.hero-btn {
+	border-width: medium;
+	padding: 0.875rem 2.5rem;
+	font-size: 1.1rem;
+}
+
+.btn:hover {
+	transform: translateY(3px);
+	background: #309786;
+	color: white
+}
+
+/*============= Target SECTION =============*/
+.target-section {
+	background: #EAEAEB;
+}
+
+.target img {
+	margin-bottom: 1.5625rem;
+}
+
+.target-title {
+	text-transform: uppercase;
+}
+
+.target svg {
+	margin: 1rem 0rem;
+}
+
+@media (min-width: 768px) { 
+	.target svg{
+		margin: 1.875rem 0rem;
+	}
+ }
+
+@media (min-width: 1200px) { 
+	.target {
+		padding: 0px 30px;
+	}
+ }
+
+ /* ========= Blog Section ===============*/
+
+ .card:nth-child(2) {
+	 margin-top: 30px;
+ }
+
+ @media (min-width: 768px) { 
+	.card:nth-child(2){
+		margin-top: 0px;
+	}
+ }
+
+ .card {
+	 border: none;
+ }
+
+ .card img {
+	 margin-bottom: 2.5rem;
+	 width: 100%;
+ }
+
+ .card-title {
+	 font-size: 1rem ;
+	 text-transform: uppercase;
+	 font-weight: bold;
+ }
+
+ @media (min-width: 768px) { 
+	 .card-title {
+		 font-size: 1.125rem;
+	 }
+	}
+	
+	.card svg {
+		margin: 0.625rem 0 1.25rem
+	}
+
+	.card-btn {
+		padding: 0.5rem 1.3rem;	
+		margin-top: 0.9375rem;
+	}
+
+
+
+/* ============= Jumbothron Section ============ */
+.jumbotron {
+	background-color: #EAEAEB;
+}
+
+.jumbo-title {
+	display: inline;
+	font-size: 1.25rem;
+}
+
+@media (min-width: 768px) { 
+	.jumbo-title {
+		font-size: 2rem;
+	}
+ }
+
+.jumbotron svg {
+	vertical-align: bottom;
+	margin-right: 0.625rem;
+}
+
+.jumbo-btn {
+	margin-top: 0.9375rem;
+	background: #D2D5DA;
+	padding: 0.5rem 1.3rem;
+	
+}
+
+.jumbo-btn:hover {
+	background: #50C3AF;
+	
+}
+
+@media (min-width: 768px) { 
+	.jumbo-btn {
+		margin-top: 1.5625rem;
+	}
+ }
+
+ /* ============= Feauture Section ============ */
+.feature-link {
+	color: #50C3AF;
+	text-decoration: none;
+}
+
+.feature-link:hover {
+	color: #309786;
+	text-decoration: none;
+}
+
+.col-md-4 .card-title {
+	font-size: 1.025rem;
+}
+
+.features-card {
+	margin-top: 2.5rem;
+}
+
+.col-md-4 svg {
+	max-width: 100%;
+}
+
+@media (min-width: 768px) { 
+	.features-card {
+		margin-top: 0rem;
+	}
+ }
+
+ /* ============= Blog Two Section ============ */
+.blog-two, .blog-two-card {
+	background: #EAEAEB;
+}
+ .blog-two-title {
+	display: inline;
+}
+
+.blog-two-card {
+	margin-top: 3.125rem;
+}
+
+.blog-two-card svg {
+	margin-right: 0.625rem;
+}
+
+ /* ============= End Section ============ */
+.end-image {
+	width: 100%;
+	max-width: 420px ;
+}
+
+.end-title {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+}
+
+@media (min-width: 768px) { 
+	.end-title {
+		font-size: 1.75rem
+	}
+ }
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+/*# sourceMappingURL=style.css.map */
