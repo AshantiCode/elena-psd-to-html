@@ -1,3 +1,20 @@
+//initialize Animate on Scroll
+AOS.init({
+	// offset: 120, // offset (in px) from the original trigger point
+	delay: 250, // values from 0 to 3000, with step 50ms
+	duration: 1100, // values from 0 to 3000, with step 50ms
+	easing: 'ease-in-out', // default easing for AOS animations
+	once: false, // whether animation should happen only once - while scrolling down
+	mirror: false, // whether elements should animate out while scrolling past them
+	anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+
+// resize header incl navigation on scroll at device width= 768px and up
+document.getElementById("navbar").classList.add("flex-md-column")
+document.getElementById("navbar").style.cssText = "padding: 80px 10px; display: flex;";
+document.getElementById("logo").style.cssText = "width:inherit;";
+document.getElementById("navbar").classList.add("flex-md-column")
 window.onscroll = function () { scrollFunction() };
 const mq = window.matchMedia("(max-width: 768px)");
 
@@ -19,8 +36,7 @@ function scrollFunction() {
 	}
 }
 
-//initialize Animate on Scroll
-AOS.init()
+
 
 
 
